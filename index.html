@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c9b1a1a719.js" crossorigin="anonymous"></script>
+
+    <title>Facebook like <button></button></title>
+    
+</head>
+<body>
+    <span id="icon"><i class="fa-regular fa-heart"></i></span>
+    <span id="count">0 </span>like
+
+    <script>
+        let img =document.createElement("img");
+        img.setAttribute("src", "./image/img.jpg");
+        document.body.appendChild(img);
+
+        let id= document.getElementById("icon");
+
+        id.addEventListener("click",function(){
+        let count= document.getElementById("count");
+        count.innerText++;
+        });
+
+
+    </script>
+</body>
+</html>
